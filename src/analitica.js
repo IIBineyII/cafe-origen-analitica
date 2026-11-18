@@ -55,7 +55,6 @@ function ticketPromedio(ventas) {
 
 function ventasPorCiudad(ventas, ciudad) {
     let total = 0;
-
     const ciudadBuscada = ciudad.trim().toLowerCase();
 
     for (const venta of ventas) {

@@ -21,3 +21,5 @@ Que aprendí:
 - Aprendí las deficiones de objeto y arrays o arreglo, y de que están compuestos estos. En el caso del objeto se usa {} y adentro van propiedades o elementos, y en el caso del arrays se usa [] y dentro de esta hay mas objetos que se dividen justamente con llaves. 
 
 - Aprendí a exportar e importar información de un arrays y de como este está compuesto por objetos que enumeran en indices a partir de "0". En base a eso se puede llamar la información del arrays escribiendo "ventas[4]".
+
+Minireto #2
