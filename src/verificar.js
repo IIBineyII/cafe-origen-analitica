@@ -6,7 +6,8 @@ const {
     ventasPorCiudad,
     totalVendidoM,
     unidadesVendidasM,
-    ventasPorCiudadM
+    ventasPorCiudadM,
+    valorVenta
 } = require("./analitica");
 
 function verificar(nombre, resultadoCiclo, resultadoMetodo) {
@@ -34,3 +35,17 @@ verificar(
     ventasPorCiudad(ventas, "Medellín"),
     ventasPorCiudadM(ventas, "Medellín")
 );
+
+function totalPorCiudad(ventas) {
+    return ventas.reduce((totales, venta)=>{
+        const ciudad =venta.ciudad.trim().tolowerCae();
+
+        if  (totales[ciudad] === undefined) {
+            totales[ciudad] = 0;
+        }
+
+        totales[ciudad]+= valorVenta(venta);
+
+        return totales;
+    }, {});
+}

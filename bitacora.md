@@ -67,3 +67,12 @@ Ticket promedio sin ventas válidas	            Devolver 0 para evitar NaN.
 Cantidad igual a cero	                        Aporta 0 al total y a las unidades; no cuenta para el ticket promedio.
 Ciudades con diferentes mayúsculas o espacios	Comparar usando trim() y toLowerCase() sin modificar los datos originales.
 Empate entre ventas máximas                 	Conservar la primera venta encontrada con ese valor.
+
+Minireto #3
+
+Qué aprendí
+- filter selecciona los elementos que cumplen una condición, por ejemplo, ventas cuya cantidad sea mayor que cero. 
+- map crea un nuevo array transformando cada elemento, Por ejemplo, convertir objetos de ventas en sus valores monetarios. 
+- reduce combina los elementos para obtener un resultado, como una suma o un objeto agrupado. 
+- sort es para ordernar los elementos siguiendo una función de comparación. 
+- slice devuelve una porción del array sin modificar el original.
