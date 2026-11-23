@@ -1,0 +1,11 @@
+const assert = require('node:assert/strict');
+const { generarVentas } = require('./generador');
+const { totalCiudadCadena, totalCiudadUnaPasada } = require('./analitica');
+const ventas = generarVentas(10000);
+const ciudad = 'Bogotá ';
+const cadena = totalCiudadCadena(ventas, ciudad);
+const pasada = totalCiudadUnaPasada(ventas, ciudad);
+assert.equal(cadena, pasada);
+console.log(`OK · 10.000 ventas · ${ciudad.trim()} · $${cadena.toLocaleString('es-CO')}`);
+console.log('Cadena: map(n) + filter(n) + map(m) + reduce(m); 3 arreglos nuevos (n, m, m).');
+console.log('Una pasada: for...of(n); 0 arreglos intermedios.');
